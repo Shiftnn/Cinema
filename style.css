@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --lightb:#6feaf6;
+    --white:#fff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    background-color: #242333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.seat {
+    background-color: #444451;
+    height: 15px;
+    width: 20px;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.seat:hover {
+    scale: 2;
+}
+
+.film {
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.film h2 {
+    margin: 0px;
+    color:white;
+}
+
+.film select:focus {
+    outline: 0px;
+}
+
+select {
+    -webkit-appearance: none; 
+    text-align: left;
+    border-radius: 5px;
+}
+
+option {
+    padding-left: 10px;
+}
+
+select:hover {
+    background-color: #fff;
+}
+
+select {
+    background-color: #fff;
+    color: black;
+    padding: 7px;
+}
+
+.seat-info {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    background-color:#3b3232a2;
+    padding: 10px 25px;
+    width: fit-content;
+    align-items: center;
+    justify-content:space-around;
+    color:rgb(180, 180, 180);
+}
+.seat-info .seat {
+    cursor: default;
+}
+.seat-info-item {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+.seat-info-item p {
+    margin: 0px;
+}
+
+.selected.seat {
+    background-color: var(--lightb);
+    box-shadow: 0 0px 10px 0px var(--lightb);
+}
+
+.selected.result {
+    color: var(--lightb);
+}
+
+.occupied {
+    background-color:var(--white);
+    cursor: default;
+}
+
+.hall {
+    width: 250px;
+    height: 270px;
+    margin-top: 20px;
+}
+
+.monitor {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+.seats {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    width: 60px;
+    display: flex;
+    gap: 7px;
+    height: fit-content;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.column:nth-child(2) {
+    width: 120px;
+    display: flex;
+    gap: 7px;
+    height: fit-content;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.w {
+    color: white;
+}
