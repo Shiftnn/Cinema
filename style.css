@@ -29,8 +29,8 @@ body {
     transition: .2s;
 }
 
-.seat:hover {
-    scale: 2;
+.column .seat:hover {
+    transform: scale(1.2);
 }
 
 .film {
@@ -57,10 +57,6 @@ select {
 
 option {
     padding-left: 10px;
-}
-
-select:hover {
-    background-color: #fff;
 }
 
 select {
